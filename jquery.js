@@ -8,7 +8,7 @@ $(document).ready(function(){
 			for(var j = 0; j < size; j++){
 			$('.sketchboard').append('<div class="box"></div>');
 			}
-		$('.sketchboard').append('<br />');  
+		$('.sketchboard').append('<br />');
 		}
 	}
 	//Colorear
@@ -18,15 +18,18 @@ $(document).ready(function(){
 		});
 	}
 	//Boton de reinicio
-	var reset = function(){
+  var reset = function(){
 			$('.box').remove();
 			$('br').remove();
 			createBoard(size);
 			paint()
 		}
-		
+
+  $('#reset').click(function(){
+    reset();
+  });
+
 	var size = 16;
 	createBoard(size);
 	paint();
 	});
-  

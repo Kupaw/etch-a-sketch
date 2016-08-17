@@ -1,7 +1,17 @@
-div{
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: black;
-  border: 1px solid white;
+.box{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: black;
+	border: 1px solid white;
+}
+
+.sketchboard{
+	height: 100%;
+	width: 100%;
+}
+
+.sketchboard, .menu{
+	margin-top: 20px;
+	text-align:center;
 }
